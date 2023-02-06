@@ -6,7 +6,7 @@ function App() {
   const [advice, setAdvice] = useState("");
 
   const receivedAdvice = async () => {
-  const response = await fetch ("http://www.boredapi.com/api/activity/");
+  const response = await fetch ("https://www.boredapi.com/api/activity/");
   const data = await response.json();
   setAdvice(data.activity);
      };
